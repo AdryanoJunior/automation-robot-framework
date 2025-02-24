@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.8 on win32)" generated="2025-02-24T15:03:57.882622" rpa="false" schemaversion="5">
+<suite id="s1" name="Loginpractice Steps" source="c:\repositorio\.projeto_robot\tests\loginpractice_steps.robot">
+<test id="s1-t1" name="Successful - EBAC" line="14">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2025-02-24T15:03:58.367647" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-24T15:03:58.366642" elapsed="1.927013"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-24T15:04:00.297663" level="INFO">Opening browser 'chrome' to base url 'http://lojaebac.ebaconline.art.br/my-account/'.</msg>
+<arg>url=http://lojaebac.ebaconline.art.br/my-account/</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-24T15:04:00.295652" elapsed="6.026377"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-24T15:04:06.325014" level="INFO">Typing text 'admin@test.com' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>admin@test.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-24T15:04:06.324021" elapsed="0.231886"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-24T15:04:06.559020" level="INFO">Clicking element 'login'.</msg>
+<arg>login</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-24T15:04:06.558038" elapsed="0.952220"/>
+</kw>
+<status status="PASS" start="2025-02-24T15:03:58.362641" elapsed="9.149141"/>
+</test>
+<status status="PASS" start="2025-02-24T15:03:57.892135" elapsed="9.625723"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Loginpractice Steps" id="s1" pass="1" fail="0" skip="0">Loginpractice Steps</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
