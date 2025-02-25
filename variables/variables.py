@@ -15,3 +15,9 @@ ERROR_MESSAGES = {
     "noCredentials": "Username is required",
     "wrongCredentials": "Username and password do not match any user in this service"  
 }
+
+URL_DATA = {
+    "baseUrl": "https://www.saucedemo.com",
+    "inventoryUrl": "/inventory.html",
+    "cartUrl": "/cart.html"
+}
