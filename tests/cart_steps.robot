@@ -1,11 +1,17 @@
 *** Settings ***
 Library    SeleniumLibrary
 
-*** Test Cases ***
+*** Variables ***
+${URL}    https://www.saucedemo.com/
+${BROWSER}    chrome  
+${USERNAME}    standard_user
+${PASSWORD}    secret_sauce  
+
+*** Test Cases 
 Add Procucts to Cart - Success
-    Open Browser    url=https://www.saucedemo.com/   browser=chrome
-    Input Text    id=user-name    standard_user
-    Input Password    id=password    secret_sauce
+    Open Browser    url=${URL}   browser=${BROWSER}
+    Input Text    id=user-name    ${USERNAME}    
+    Input Password    id=password    ${PASSWORD}
     Click Button    login-button
     ${location}    Get Location
     Should Be Equal    ${location}    https://www.saucedemo.com/inventory.html
